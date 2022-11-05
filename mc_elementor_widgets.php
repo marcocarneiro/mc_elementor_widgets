@@ -10,13 +10,10 @@ License: GPLv2 or later
 Text Domain: mc_elementor_widgets
 */
 
-//INCLUDES
-$arqCoreInit = plugin_dir_path( __FILE__ ). 'core_init.php';
+define( 'MC_ELEMENTOR_WIDGETS', __FILE__ );
+/**
+ * Insere a classeMc_Elementor_Widgets.
+ */
+require plugin_dir_path( MC_ELEMENTOR_WIDGETS ) . 'class-mc-elementor-widgets.php';
 
-//Aborta se não for executado pelo WP
-if( ! defined('WPINC')){die();}
-
-if(file_exists($arqCoreInit)){
-    require_once($arqCoreInit);
-}
 
