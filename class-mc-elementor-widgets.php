@@ -113,7 +113,7 @@ final class Mc_Elementor_Widgets {
 	 * @access public
 	 */
 	public function admin_notice_missing_main_plugin() {
-		deactivate_plugins( plugin_basename( Mc_Elementor_Widgets ) );
+		deactivate_plugins( plugin_basename( MC_ELEMENTOR_WIDGETS ) );
 		return sprintf(
 			wp_kses(
 				'<div class="notice notice-warning is-dismissible"><p><strong>"%1$s"</strong> requires <strong>"%2$s"</strong> to be installed and activated.</p></div>',
@@ -138,7 +138,7 @@ final class Mc_Elementor_Widgets {
 	 * @access public
 	 */
 	public function admin_notice_minimum_elementor_version() {
-		deactivate_plugins( plugin_basename( Mc_Elementor_Widgets ) );
+		deactivate_plugins( plugin_basename( MC_ELEMENTOR_WIDGETS ) );
 		return sprintf(
 			wp_kses(
 				'<div class="notice notice-warning is-dismissible"><p><strong>"%1$s"</strong> requires <strong>"%2$s"</strong> version %3$s or greater.</p></div>',
@@ -164,7 +164,7 @@ final class Mc_Elementor_Widgets {
 	 * @access public
 	 */
 	public function admin_notice_minimum_php_version() {
-		deactivate_plugins( plugin_basename( Mc_Elementor_Widgets ) );
+		deactivate_plugins( plugin_basename( MC_ELEMENTOR_WIDGETS ) );
 		return sprintf(
 			wp_kses(
 				'<div class="notice notice-warning is-dismissible"><p><strong>"%1$s"</strong> requires <strong>"%2$s"</strong> version %3$s or greater.</p></div>',
